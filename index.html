@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Link Bootstrap -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- Link Font aswom -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <!-- Link Css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Link Media Query -->
+  <link rel="stylesheet" href="./css/media.css">
+  <meta charset="UTF-8">
+  <meta name="description" content="Weather">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title web site -->
+  <title>Weather</title>
+</head>
+
+<body>
+  <!-- Start Header -->
+  <header id="Home">
+    <nav class="navbar navbar-expand-lg d-block">
+      <div class="container">
+        <a class="navbar-brand d-flex fs-6 p-4" href="#Home">
+          <img src="./image/logo@2x.png" alt="logo">
+          <p class="ps-3"> <span class="fw-bold">Weather</span><br /> tagline goes here</p>
+
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item fw-bold ">
+              <a class="nav-link active pe-3 ps-3" aria-current="page" href="#Home"> Home </a>
+            </li>
+            <li class="nav-item  fw-bold">
+              <a class="nav-link pe-3 ps-3" href="#">News </a>
+            </li>
+            <li class="nav-item  fw-bold">
+              <a class="nav-link pe-3 ps-3" href="#">Live cameras </a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link pe-3 ps-3" href="#">Photos</a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link pe-3 ps-3 " href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End Header -->
+  <section class="section-one position-relative">
+    <div class="img-section-one">
+
+    </div>
+    <div class="container input pt-lg-5">
+      <div class="position-relative">
+        <form action="">
+          <input type="text" id="search" class="form-control text-light p-3 searchField"
+            placeholder="Find Your Location" onkeydown="" />
+          <button class="btn btn-info text-light searchBtn px-5 py-2 position-absolute top-50 translate-middle-y"
+            type="button">
+            Find
+          </button>
+        </form>
+      </div>
+      <div class="container">
+        <div class="row days pt-4 g-0 ">
+          <div class="col-lg-4 col-sm-12">
+            <div class="cardone">
+              <div class="title-card-one  d-flex justify-content-between p-2">
+                <p id="today"></p>
+                <span>
+                  <span id="numberday" ></span>
+                  <span id="monthdatacardone"></span>
+                </span>
+        
+              </div>
+              <div class="card-one-bottom">
+                <p class="fs-3 p-3" id="cuntery"></p>
+                <div class="d-flex justify-content-around align-items-center">
+                  <span class="fw-bold text-white text-font">
+                    <span id="card-one-temborter"></span>
+                    <span><sup>O</sup>C</span>
+                  </span>
+                  <figure>
+                    <img src="./image/113.png" id="card-one-img" class="w-100" alt="sunny">
+                  </figure>
+
+                </div>
+                <p class="sunny p-4" id="card-one-sunny"></p>
+                <div class="container">
+                  <div class="d-flex w-75 pb-3 car-one-image">
+                    <img src="./image/icon-umberella@2x.png" alt="Sunny">
+                    <p class="ps-2 pe-4" id="parsent-card-one"></p>
+                    <img src="./image/icon-wind@2x.png" alt="Wind">
+                    <p class="ps-2 pe-4" id="card-one-kilemiter"></p>
+                    <img src="./image/icon-compass@2x.png" alt="Compass">
+                    <p class="ps-2" id="card-one-East"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <div class="card-two">
+              <div class="title-card-two p-2">
+                <p class="nextday"></p>
+              </div>
+              <div class="card-two-bottom d-flex flex-column justify-content-center align-items-center">
+                <img src="./image/113.png" id="img-card-two" class="pt-5" alt="sunny">
+                <span class="fw-bold text-white fs-3 pt-4"> 
+                  <span id="card-two-slayses"></span>
+                  <span ><sup>O</sup>C</span>
+                </span>
+                <span>
+                  <span id="tempoter-card-two" class="pt-2"></span>
+                  <span> <sup>O</sup>C</span>
+                </span>
+                <p class="sunnyn pt-4" id="card-two-weather">Sunny</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <div class="card-three">
+              <div class="title-card-three p-2">
+                <p class="nextdays"></p>
+              </div>
+              <div class="card-three-bottom d-flex flex-column justify-content-center align-items-center">
+                <img src="./image/113.png" id="img-card-three" class="pt-5" alt="sunny">
+                
+                <span class="fw-bold text-white fs-3 pt-5">
+                  <span id="card-two-slaysess"></span>
+                  <span ><sup>O</sup>C</span>
+                </span>
+                <span>
+                  <span id="tempoter-card-three" class="pt-3"></span>
+                  <span> <sup>O</sup>C</span>
+                </span>
+        
+                <p class="sunnynn pt-4" id="card-three-weather">Sunny</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="section-two" class="overflow-hidden pt-5">
+    <div class="container">
+      <div class="row g-3 pb-3">
+        <div class="col-lg-8 col-sm-12">
+          <div class="position-relative">
+            <input type="text" class="form-control text-light p-3 searchField"
+              placeholder="Enter your email to Subscribe" />
+            <button class="btn btn-info text-light searchBtn px-5 py-2 position-absolute top-50 translate-middle-y"
+              type="button">
+              Subscribe
+            </button>
+          </div>
+          <p class="text-white pt-4">Copyright 2014 Company name. Designed by Themezy. All rights reserved
+          </p>
+        </div>
+        <div class="col-lg-3 col-sm-12">
+          <div class="d-flex text-white container mt-3 mx-lg-5 pb-5 icone-section-two">
+            <i class="fa-brands fa-facebook-f me-2"></i>
+            <i class="fa-brands fa-twitter me-2"></i>
+            <i class="fa-brands fa-google me-2"></i>
+            <i class="fa-brands fa-linkedin me-2"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

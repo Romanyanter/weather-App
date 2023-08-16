@@ -1,0 +1,32 @@
+/* Start Media Query */
+@media screen and (max-width:1000px) {
+  .input{
+    padding-top: 20px;
+
+  }
+}
+@media screen and (max-width:500px) {
+
+  .navbar-brand p{
+    font-size: 0.4rem;
+  }
+  .navbar-brand img{
+    width: 20%;
+  }
+}
+@media screen and (max-width:991.5px) {
+  .navbar-collapse ul li a:hover,
+  .navbar-collapse ul li a.active
+  {
+    border: 2px solid transparent;    
+
+  }
+  .navbar-collapse{
+    background-color: var(--color-card-two);
+  }
+  .navbar-toggler{
+    border-radius: 50px;
+    padding: 10px;
+  }
+
+}

@@ -1,0 +1,174 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-body: #1e202b;
+  --color-navber: #009ad8;
+  --color-card-one: #323544;
+  --color--title-card-one: #2d303d;
+  --color-card-two: #262936;
+  --color-title-card-two: #222530;
+  --color-card-three: #323544;
+  --color-title-card-three: #2d303d;
+  --color-text-incard: #bfafae;
+  --color-Footer: #262936;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--color-body);
+}
+.text-font {
+  font-size: 4rem;
+}
+
+/* Start header */
+header a p {
+  color: white;
+}
+header nav ul li a {
+  color: white !important;
+  transition: 0.3s all;
+}
+header nav ul li {
+  margin-right: 10px;
+}
+header nav ul li a {
+  border-radius: 50px;
+  border: 2px solid transparent;
+  transition: 0.3s all;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: var(--color-navber) !important;
+  border: 2px solid var(--color-navber);
+}
+header nav img {
+  width: 30%;
+  height: 20%;
+}
+.navbar-toggler {
+  color: white !important;
+  border: 2px solid var(--color-navber) !important;
+}
+.navbar {
+  --bs-navbar-toggler-focus-width: 0rem !important;
+  background-color: var(--color-body);
+}
+nav ul {
+  align-items: center;
+}
+/* Start Section one */
+.img-section-one {
+  width: 100%;
+  height: 40vh;
+  position: absolute;
+  background-image: url(../image/banner.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.form-control {
+  background-color: var(--color-body) !important;
+  color: white !important;
+  border-radius: 50px;
+  border: none;
+  box-shadow: none !important;
+}
+.searchBtn,
+.searchBtn:hover {
+  background-color: var(--color-navber);
+  border-radius: 50px;
+}
+.searchBtn {
+  right: 7px;
+}
+
+.searchBtn:hover {
+  color: initial;
+}
+
+.title-card-one {
+  background-color: var(--color--title-card-one);
+  color: var(--color-text-incard);
+  border-radius: 10px 0 0 0;
+}
+.card-one-bottom {
+  background-color: var(--color-card-one);
+  color: var(--color-text-incard);
+}
+.card-one-bottom h2 {
+  font-size: 5rem;
+}
+.sunny {
+  color: var(--color-navber);
+}
+.sunnyn {
+  color: var(--color-navber);
+}
+.sunnynn {
+  color: var(--color-navber);
+}
+.car-one-image img {
+  width: 10%;
+  height: 10%;
+}
+.title-card-two {
+  background-color: var(--color-title-card-two);
+  color: var(--color-text-incard);
+  text-align: center;
+}
+.card-two-bottom {
+  background-color: var(--color-card-two);
+  color: var(--color-text-incard);
+}
+.row {
+  margin-bottom: 40px;
+}
+.card-two-bottom img {
+  width: 10%;
+}
+.title-card-three {
+  background-color: var(--color-title-card-three);
+  color: var(--color-text-incard);
+  text-align: center;
+  border-radius: 0 10px 0 0;
+}
+.card-three-bottom {
+  background-color: var(--color-card-three);
+  color: var(--color-text-incard);
+  
+}
+.card-three{
+  height: 53.5vh;
+  background-color: var(--color-card-three);
+}
+.card-two{
+  height: 53.5vh;
+  background-color: var(--color-card-two);
+}
+
+/* End section one */
+/* Start Section two */
+#section-two {
+  background-color: var(--color-Footer);
+}
+.icone-section-two i {
+  background-color: var(--color-body);
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  color: var(--color-navber);
+  transition: 0.3s all;
+}
+.icone-section-two i:hover {
+  color: white;
+  background-color: var(--color-navber);
+}
