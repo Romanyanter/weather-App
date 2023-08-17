@@ -144,13 +144,12 @@ nav ul {
 .card-three-bottom {
   background-color: var(--color-card-three);
   color: var(--color-text-incard);
-  
 }
-.card-three{
+.card-three {
   height: 53.5vh;
   background-color: var(--color-card-three);
 }
-.card-two{
+.card-two {
   height: 53.5vh;
   background-color: var(--color-card-two);
 }

@@ -13,18 +13,19 @@ var cardonekilemiter = document.querySelector("#card-one-kilemiter");
 var cardoneEsat = document.querySelector("#card-one-East");
 // naxt day variable
 var nextday = document.querySelector(".nextday");
-var nextdaythree = document.querySelector(".nextdays");
 var imagecardtwo = document.querySelector("#img-card-two");
-var imagecardthree = document.querySelector("#img-card-three");
 var cardtwoslayses = document.querySelector("#card-two-slayses");
-var cardtwoslaysess = document.querySelector("#card-two-slaysess");
 var caedtwotempoter = document.getElementById("tempoter-card-two");
 var cardtwoweather = document.getElementById("card-two-weather");
-var cardthreeweather = document.getElementById("card-three-weather");
+// Nex three day variable
 var cardthreetempoter = document.querySelector("#tempoter-card-three");
+var cardthreeweather = document.getElementById("card-three-weather");
+var cardtwoslaysess = document.querySelector("#card-two-slaysess");
+var imagecardthree = document.querySelector("#img-card-three");
+var nextdaythree = document.querySelector(".nextdays");
 // search input
-
 var searchinput = document.querySelector("#search");
+// Function Gps
 function getCurrentWeather() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function (position) {
@@ -34,13 +35,13 @@ function getCurrentWeather() {
     });
   }
 }
-if(searchinput.value ===""){
-  getCurrentWeather()
-}else if(searchinput.value!==""){
-  getweatherdata(searchinput.value)
-
+// If else Gps
+if (searchinput.value === "") {
+  getCurrentWeather();
+} else if (searchinput.value !== "") {
+  getweatherdata(searchinput.value);
 }
-
+// Function Api Weather
 async function getweatherdata(location = "Cairo") {
   var weatherreaspone = await fetch(
     `https://api.weatherapi.com/v1/forecast.json?key=2cafcd22b9fb41c6b48144246231608&q=${location}&days=3`
@@ -48,6 +49,7 @@ async function getweatherdata(location = "Cairo") {
   var weatherdata = await weatherreaspone.json();
   return weatherdata;
 }
+// Function today Date
 function getdisplaydatatoday(data) {
   var todaydata = new Date();
   numbername.innerHTML = todaydata.getDate();
@@ -65,7 +67,7 @@ function getdisplaydatatoday(data) {
   cardonekilemiter.innerHTML = data.current.wind_kph + "KM/h";
   cardoneEsat.innerHTML = data.current.wind_dir;
 }
-
+// Function Next Day and three Day Date
 function getdisplaydatanextday(data) {
   var focasdata = data.forecast.forecastday;
   cardtwoslayses.innerHTML = data.forecast.forecastday[0].day.maxtemp_c;
@@ -89,17 +91,16 @@ function getdisplaydatanextday(data) {
     weekday: "long",
   });
 }
-
+// Functio StartApp
 async function startAppliction(city = "Cairo") {
   var weatherdata = await getweatherdata(city);
-  if(!weatherdata.erro){
+  if (!weatherdata.erro) {
     getdisplaydatatoday(weatherdata);
     getdisplaydatanextday(weatherdata);
   }
-  
 }
 startAppliction();
-
+// Function Search in Websit 
 searchinput.addEventListener("input", function () {
   startAppliction(searchinput.value);
 });

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <!-- Link Bootstrap -->
   <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -16,7 +15,6 @@
   <!-- Title web site -->
   <title>Weather</title>
 </head>
-
 <body>
   <!-- Start Header -->
   <header id="Home">
@@ -54,10 +52,14 @@
     </nav>
   </header>
   <!-- End Header -->
+  <!-- Start Section one -->
   <section class="section-one position-relative">
+    <!-- Start div image -->
     <div class="img-section-one">
     </div>
+    <!-- End div image -->
     <div class="container input pt-lg-5">
+      <!-- Start div input and button Find -->
       <div class="position-relative">
         <form action="">
           <input type="text" id="search" class="form-control text-light p-3 searchField"
@@ -68,18 +70,23 @@
           </button>
         </form>
       </div>
+      <!-- End div input and button Find -->
+      <!-- Start section Cards -->
       <div class="container">
         <div class="row days pt-4 g-0 ">
+          <!-- Start Card one -->
           <div class="col-lg-4 col-sm-12">
             <div class="cardone">
+              <!-- Start title card one -->
               <div class="title-card-one  d-flex justify-content-between p-2">
                 <p id="today"></p>
                 <span>
                   <span id="numberday"></span>
                   <span id="monthdatacardone"></span>
                 </span>
-
               </div>
+              <!-- End title Card one -->
+              <!-- Start body Card one -->
               <div class="card-one-bottom">
                 <p class="fs-3 p-3" id="cuntery"></p>
                 <div class="d-flex justify-content-around align-items-center">
@@ -90,7 +97,6 @@
                   <figure>
                     <img src="./image/113.png" id="card-one-img" class="w-100" alt="sunny">
                   </figure>
-
                 </div>
                 <p class="sunny p-3" id="card-one-sunny"></p>
                 <div class="container">
@@ -104,14 +110,19 @@
                   </div>
                 </div>
               </div>
+              <!-- End body Card one -->
             </div>
-
           </div>
+          <!-- End Card one -->
+          <!-- Start card two -->
           <div class="col-lg-4 col-sm-12">
             <div class="card-two">
+              <!-- Start title Card two -->
               <div class="title-card-two p-2">
                 <p class="nextday"></p>
               </div>
+              <!-- End title card two -->
+              <!-- Start body Card two -->
               <div class="card-two-bottom d-flex flex-column justify-content-center align-items-center">
                 <img src="./image/113.png" id="img-card-two" class="pt-5" alt="sunny">
                 <span class="fw-bold text-white fs-3 pt-4">
@@ -124,13 +135,19 @@
                 </span>
                 <p class="sunnyn pt-4" id="card-two-weather">Sunny</p>
               </div>
+              <!-- End body Card two -->
             </div>
           </div>
+          <!-- End Card two -->
+          <!-- Start Card three -->
           <div class="col-lg-4 col-sm-12">
             <div class="card-three">
+              <!-- Start title card three -->
               <div class="title-card-three p-2">
                 <p class="nextdays"></p>
               </div>
+              <!-- End title card three -->
+              <!-- Start body Card three  -->
               <div class="card-three-bottom d-flex flex-column justify-content-center align-items-center">
                 <img src="./image/113.png" id="img-card-three" class="pt-5" alt="sunny">
 
@@ -145,16 +162,24 @@
 
                 <p class="sunnynn pt-4" id="card-three-weather">Sunny</p>
               </div>
+              <!-- End body Card three -->
             </div>
           </div>
+          <!-- End Card three -->
         </div>
       </div>
+      <!-- End Section Cards -->
     </div>
   </section>
+  <!-- End Section one -->
+
+  <!-- Start Section two -->
   <section id="section-two" class="overflow-hidden pt-5">
     <div class="container">
       <div class="row g-3 pb-3">
+        <!-- Start one gred System -->
         <div class="col-lg-8 col-sm-12">
+          <!-- Start input and button Find -->
           <div class="position-relative">
             <input type="text" class="form-control text-light p-3 searchField"
               placeholder="Enter your email to Subscribe" />
@@ -163,22 +188,38 @@
               Subscribe
             </button>
           </div>
-          <p class="text-white pt-4">Copyright 2014 Company name. Designed by Themezy. All rights reserved
-          </p>
+          <!-- End input and button Find -->
+          <!-- Start pargaphe -->
+          <p class="text-white pt-4">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+          <!-- End pargaphe -->
         </div>
+        <!-- End one gred System -->
+        <!-- Start two gred System -->
         <div class="col-lg-3 col-sm-12">
+          <!-- Start Group oF Links -->
           <div class="d-flex text-white container mt-3 mx-lg-5 pb-5 icone-section-two">
-            <i class="fa-brands fa-facebook-f me-2"></i>
-            <i class="fa-brands fa-twitter me-2"></i>
-            <i class="fa-brands fa-google me-2"></i>
-            <i class="fa-brands fa-linkedin me-2"></i>
+            <!-- icone Facebook -->
+            <a href="https://www.facebook.com/romane.antar?mibextid=ZbWKwL" target="_blank"><i
+                class="fa-brands fa-facebook-f me-2"></i></a>
+            <!-- Link twitter -->
+            <a href="https://twitter.com/RomanyAnter2?t=KSwcmmfIKL7mxC-p3-ic_g&s=35" target="_blank"><i
+                class="fa-brands fa-twitter me-2"></i></a>
+            <!-- Link google -->
+            <a href="https://www.google.com/" target="_blank"><i class="fa-brands fa-google me-2"></i></a>
+            <!-- Link Linked in -->
+            <a href="https://www.linkedin.com/in/romany-anter-79b688215" target="_blank"><i
+                class="fa-brands fa-linkedin me-2"></i></a>
           </div>
+          <!-- End Group OF Links -->
         </div>
+        <!-- End two gred System -->
       </div>
     </div>
   </section>
+  <!-- End Seaction two -->
+  <!-- Link BootStrap JavaScript -->
   <script src="./js/bootstrap.bundle.min.js"></script>
+  <!-- Link JavaScript -->
   <script src="./js/main.js"></script>
 </body>
-
 </html>
